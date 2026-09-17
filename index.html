@@ -5,69 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <header>
-      <img src="/assets/logo.png" alt="logo" />
-      <ul>
-        <li><a href="">HAPPYPINES</a></li>
-        <li><a href="">BOOKS</a></li>
-        <li><a href="">ABOUT US </a></li>
-        <li><a href="">CONTACT</a></li>
-      </ul>
+      <a href="" aria-label="Happypines home">
+        <img src="assets/logo.png" alt="Happypines logo" />
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="">HAPPYPINES</a></li>
+          <li><a href="">BOOKS</a></li>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    <div>
-      <section>
-        <img src="/assets/img01.png" alt="un" />
+
+    <main>
+      <section id="home">
+        <div>
+          <img
+            src="assets/img01.png"
+            alt="Friends smiling while working together on a laptop"
+          />
+        </div>
+        <div>
+          <h1>How happy<br />are you?</h1>
+          <p>
+            Learn how great it is to live, connect and grow with the people
+            around you. Happiness is closer than you think.
+          </p>
+          <a href="">Read more</a>
+        </div>
       </section>
-      <section>
-        <h1>Welcome to Happypines</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quod, quia, voluptates quibusdam quas quae quibusdam
-        </p>
-        <button>Read More</button>
-      </section>
-    </div>
-    <div>
-      <section>
-        <h1>Our Books</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quod, quia, voluptates quibusdam quas quae quibusdam
-        </p>
-        <button>Read More</button>
-      </section>
-      <section>
-        <img src="/assets/graph01.png" alt="gra1" />
-        <img src="/assets/graph02.png" alt="gra2" />
-      </section>
-    </div>
-    <div>
-      <section>
-        <h1>About Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quod, quia, voluptates quibusdam quas quae quibusdam
-        </p>
-        <button>Read More</button>
-      </section>
-      <section>
-        <img src="/assets/img02.png" alt="un2" />
-      </section>
-    </div>
-    <div>
-      <section>
-        <img src="/assets/img03.png" alt="un3" />
+
+      <section id="books">
+        <div>
+          <h2>Happiness<br />in numbers</h2>
+          <p>
+            Discover what small, positive changes can do for your everyday life.
+          </p>
+          <a href="">Read more</a>
+        </div>
+        <div aria-label="Happiness statistics">
+          <img src="assets/graph01.png" alt="Happiness percentage chart" />
+          <img src="assets/graph02.png" alt="Happiness progress chart" />
+        </div>
       </section>
 
       <section>
-        <h1>Contact Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quod, quia, voluptates quibusdam quas quae quibusdam
-        </p>
-        <button>Read More</button>
+        <div>
+          <h2>We can help you<br />to be happy</h2>
+          <p>
+            Find simple ways to feel better, stay connected and make more time
+            for the things that matter most.
+          </p>
+          <a href="">Read more</a>
+        </div>
+        <div>
+          <img
+            src="assets/img02.png"
+            alt="Friends sharing a happy moment together"
+          />
+        </div>
       </section>
-    </div>
+
+      <section>
+        <div>
+          <img src="assets/img03.png" alt="Two people talking and smiling" />
+        </div>
+        <div>
+          <h2><span>100%</span> happiness</h2>
+          <p>
+            Happiness grows when we share it. Take a moment to focus on what
+            makes you feel grateful, calm and connected.
+          </p>
+          <a href="">Read more</a>
+          <img src="assets/graph01.png" alt="Happiness percentage breakdown" />
+        </div>
+      </section>
+
+      <section id="about">
+        <div>
+          <h2>About us</h2>
+          <p>
+            We believe happiness is not a destination. It is a daily practice
+            built from small choices, meaningful connections and a little
+            curiosity.
+          </p>
+        </div>
+        <img src="assets/img04.png" alt="Friends learning together" />
+        <a href="">Read more</a>
+      </section>
+
+      <section id="team">
+        <div>
+          <img src="assets/img02.png" alt="Team members joining hands" />
+        </div>
+        <div>
+          <h2>Our team</h2>
+          <p>
+            Meet the people behind Happypines. We create useful ideas and tools
+            that help you bring more happiness into everyday life.
+          </p>
+          <a href="">Read more</a>
+        </div>
+      </section>
+
+      <section id="method">
+        <div>
+          <h2>Try our method<br />for free</h2>
+          <p>
+            Learn practical ways to reconnect with yourself, build better habits
+            and enjoy the small moments that make a difference.
+          </p>
+          <a href="">Read more</a>
+        </div>
+        <div>
+          <img
+            src="assets/img03.png"
+            alt="Couple talking during a coaching session"
+          />
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <form action="" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <div>
+          <h2>Subscribe to<br />our newsletter</h2>
+          <p>
+            Receive practical ideas, useful inspiration and a little more
+            happiness in your inbox.
+          </p>
+          <button type="button">Subscribe</button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div>
+          <h2>Contact</h2>
+          <p>Have a question? We would love to hear from you.</p>
+        </div>
+        <img src="assets/map.png" alt="Map showing the Happypines location" />
+        <a href="">Contact</a>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/logoWhite.png" alt="Happypines logo" />
+      <div>
+        <a href="">Happypines</a>
+        <a href="">Books</a>
+        <a href="">About us</a>
+        <a href="">Contact</a>
+      </div>
+      <div aria-label="Social media links">
+        <a href="" aria-label="Instagram"
+          ><img src="assets/Instagram.png" alt=""
+        /></a>
+        <a href="" aria-label="Facebook"
+          ><img src="assets/Facebook.png" alt=""
+        /></a>
+        <a href="" aria-label="Twitter"
+          ><img src="assets/Twitter.png" alt=""
+        /></a>
+      </div>
+      <p>Copyright | Happypines</p>
+    </footer>
   </body>
 </html>
