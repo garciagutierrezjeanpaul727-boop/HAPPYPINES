@@ -1,0 +1,393 @@
+/* Estilos generales para celular */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-family: Impact, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #111;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #ffd000;
+}
+
+header img {
+  width: 70px;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav a {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Secciones: en celular se muestran una debajo de otra */
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+main > section > div {
+  width: 100%;
+}
+
+main > section img {
+  width: 100%;
+}
+
+main > section a,
+.newsletter button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: none;
+  background-color: #ffd000;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Portada */
+.hero,
+.team {
+  min-height: 0;
+}
+
+.hero img,
+.feature img,
+.team img,
+.method img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Estadisticas */
+.stats {
+  width: 100%;
+  margin: 0;
+  padding: 30px 20px;
+  background-color: #e8e8e8;
+  box-shadow: 0 8px 15px #0003;
+}
+
+.stats h2,
+.split-card h2,
+.newsletter h2 {
+  color: #d8ad00;
+}
+
+.stats > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.stats img {
+  width: 40%;
+}
+
+.feature {
+  background-color: #ffd000;
+}
+
+/* Tarjeta de felicidad */
+.split-card {
+  width: 100%;
+  margin: 0;
+  padding: 30px 20px;
+  background-color: #e8e8e8;
+  box-shadow: 0 8px 15px #0003;
+}
+
+.split-card > div {
+  min-height: 0;
+}
+
+.split-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.split-card > div:last-child img {
+  width: 160px;
+  align-self: flex-end;
+}
+
+/* Sobre nosotros */
+.about {
+  background-color: #050505;
+  color: white;
+  text-align: center;
+}
+
+.about h2 {
+  color: #ffd000;
+}
+
+.about > img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* Metodo */
+.method {
+  background-color: #e8e8e8;
+}
+
+/* Formulario */
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px;
+  background-color: #050505;
+  color: white;
+}
+
+.newsletter form > div {
+  display: flex;
+  flex: 1 1 45%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.newsletter form > div:last-of-type {
+  flex-basis: 100%;
+}
+
+.newsletter input,
+.newsletter textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.newsletter textarea {
+  resize: vertical;
+}
+
+/* Contacto */
+.contact {
+  background-color: #ffd000;
+  text-align: center;
+}
+
+.contact > img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.contact > a {
+  background-color: #050505;
+  color: white;
+}
+
+/* Pie de pagina */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px 20px;
+  background-color: #050505;
+  color: #ffd000;
+}
+
+footer > img {
+  width: 75px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer a {
+  color: #ffd000;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+footer > div[aria-label] {
+  flex-direction: row;
+  gap: 15px;
+}
+
+footer > div[aria-label] img {
+  width: 25px;
+}
+
+footer p {
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid #555;
+}
+
+/* 481 a 768 pixeles */
+@media all and (min-width: 481px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  main > section {
+    padding: 40px 8%;
+  }
+
+  .stats,
+  .split-card {
+    padding: 40px 8%;
+  }
+
+  .contact > img {
+    height: 280px;
+  }
+
+  footer {
+    padding: 40px 5%;
+  }
+}
+
+/* 769 a 920 pixeles */
+@media all and (min-width: 769px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header ul {
+    gap: 25px;
+  }
+
+  main > section {
+    flex-direction: row;
+    gap: 25px;
+    padding: 50px 6%;
+  }
+
+  main > section > div {
+    flex: 1;
+  }
+
+  .hero,
+  .team {
+    min-height: 400px;
+  }
+
+  .stats,
+  .split-card {
+    width: 88%;
+    margin: 40px auto;
+    padding: 35px;
+  }
+
+  .split-card > div {
+    min-height: 280px;
+  }
+
+  .about,
+  .contact {
+    flex-direction: column;
+  }
+
+  .about > img {
+    width: 80%;
+  }
+
+  .newsletter form,
+  .newsletter > div {
+    flex: 1;
+  }
+
+  footer {
+    padding: 40px 6%;
+  }
+}
+
+/* 921 a 1279 pixeles */
+@media all and (min-width: 921px) {
+  main > section {
+    gap: 40px;
+    padding: 60px 8%;
+  }
+
+  .stats,
+  .split-card {
+    width: 84%;
+  }
+
+  .about > img {
+    width: 75%;
+  }
+
+  .contact > img {
+    height: 350px;
+  }
+}
+
+/* 1280 pixeles o mas */
+@media all and (min-width: 1280px) {
+  main > section {
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+
+  .hero {
+    min-height: 480px;
+  }
+
+  .stats,
+  .split-card {
+    width: 76%;
+  }
+
+  .about > img {
+    width: 70%;
+  }
+}

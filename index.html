@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Happypines</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
-    <header>
-      <a href="" aria-label="Happypines home">
+    <header class="header">
+      <a href="#home" aria-label="Happypines home">
         <img src="assets/logo.png" alt="Happypines logo" />
       </a>
       <nav aria-label="Main navigation">
         <ul>
-          <li><a href="">HAPPYPINES</a></li>
-          <li><a href="">BOOKS</a></li>
-          <li><a href="">ABOUT US</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#home">HAPPYPINES</a></li>
+          <li><a href="#books">BOOKS</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="home">
+      <section id="home" class="hero">
         <div>
           <img
             src="assets/img01.png"
@@ -35,17 +36,17 @@
             Learn how great it is to live, connect and grow with the people
             around you. Happiness is closer than you think.
           </p>
-          <a href="">Read more</a>
+          <a href="#books">Read more</a>
         </div>
       </section>
 
-      <section id="books">
+      <section id="books" class="stats">
         <div>
           <h2>Happiness<br />in numbers</h2>
           <p>
             Discover what small, positive changes can do for your everyday life.
           </p>
-          <a href="">Read more</a>
+          <a href="#books">Read more</a>
         </div>
         <div aria-label="Happiness statistics">
           <img src="assets/graph01.png" alt="Happiness percentage chart" />
@@ -53,14 +54,14 @@
         </div>
       </section>
 
-      <section>
+      <section class="feature">
         <div>
           <h2>We can help you<br />to be happy</h2>
           <p>
             Find simple ways to feel better, stay connected and make more time
             for the things that matter most.
           </p>
-          <a href="">Read more</a>
+          <a href="#about">Read more</a>
         </div>
         <div>
           <img
@@ -70,7 +71,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="split-card">
         <div>
           <img src="assets/img03.png" alt="Two people talking and smiling" />
         </div>
@@ -80,12 +81,12 @@
             Happiness grows when we share it. Take a moment to focus on what
             makes you feel grateful, calm and connected.
           </p>
-          <a href="">Read more</a>
+          <a href="#about">Read more</a>
           <img src="assets/graph01.png" alt="Happiness percentage breakdown" />
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" class="about">
         <div>
           <h2>About us</h2>
           <p>
@@ -95,10 +96,10 @@
           </p>
         </div>
         <img src="assets/img04.png" alt="Friends learning together" />
-        <a href="">Read more</a>
+        <a href="#about">Read more</a>
       </section>
 
-      <section id="team">
+      <section id="team" class="team">
         <div>
           <img src="assets/img02.png" alt="Team members joining hands" />
         </div>
@@ -112,7 +113,7 @@
         </div>
       </section>
 
-      <section id="method">
+      <section id="method" class="method">
         <div>
           <h2>Try our method<br />for free</h2>
           <p>
@@ -129,7 +130,7 @@
         </div>
       </section>
 
-      <section id="newsletter">
+      <section id="newsletter" class="newsletter">
         <form action="" method="post">
           <div>
             <label for="name">Name</label>
@@ -163,7 +164,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact">
         <div>
           <h2>Contact</h2>
           <p>Have a question? We would love to hear from you.</p>
